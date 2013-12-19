@@ -10,6 +10,9 @@
 
 @interface NSString (Dates)
 + (NSString *)stringFormattedForDate:(NSDate *)dat;
++ (NSString *)stringFormattedForDate:(NSDate *)dat
+                           timeStyle:(NSDateFormatterStyle)timeStyle dateStyle:(NSDateFormatterStyle)dateStyle;
++ (NSString *)stringWithIntervalFromDate:(NSDate *)startDate toDate:(NSDate *)endDate;
 @end
 
 @interface NSDate (Strings)
